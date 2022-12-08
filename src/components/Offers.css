@@ -1,0 +1,46 @@
+.offers {
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+.offers .images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.offers .image {
+  background-color: #020202;
+  padding: 4rem 0;
+  display: grid;
+  place-items: center;
+  border-radius: 3rem 0 0 0;
+}
+@media screen and (max-width: 1200px) {
+  .offers .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offers .image {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .offers {
+    padding: 0 1rem;
+  }
+  .offers .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offers .image {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .offers {
+    padding: 0 0.5rem;
+  }
+  .offers .images {
+    grid-template-columns: 1fr;
+  }
+}

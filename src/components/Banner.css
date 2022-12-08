@@ -1,0 +1,93 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.left h1 {
+  font-size: 3rem;
+  font-family: 'Kranky', cursive;
+  text-transform: uppercase;
+}
+
+.left h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.left p {
+  margin: 0.2rem 0 1.4rem 0;
+  padding: 0 1rem;
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
+.banner button {
+  margin-bottom: 2rem;
+}
+
+.mini-models {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.mini-models div {
+  background-color: #090909;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+}
+.mini-models div .image1 {
+  width: 60%;
+}
+
+.mini-models .image2,
+.mini-models .image3 {
+  width: 80%;
+}
+
+.mini-models div:hover {
+  border: 1px solid #d8a788;
+  cursor: pointer;
+}
+
+.mini-models div:not(:last-child) {
+  padding-top: 0.5rem;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .right .image {
+    background: none;
+  }
+
+  .right img {
+    width: 80%;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+  }
+  .left h2 {
+    font-size: 1.8rem;
+  }
+}

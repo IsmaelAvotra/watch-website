@@ -1,0 +1,135 @@
+.watch-details {
+  display: flex;
+}
+
+.left-detail {
+  flex: 1;
+}
+.left-detail img {
+  width: 100%;
+}
+
+.right-detail {
+  flex: 1;
+  padding: 1rem;
+}
+
+.right-detail h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.right-detail .price {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.right-detail .price span {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.right-detail .price .right-price {
+  color: #d8a688;
+}
+
+.right-detail .price .old-price {
+  color: #c1c1c1;
+  text-decoration: line-through;
+}
+
+.brand span {
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.brand {
+  color: #d8a688;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.rect {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.quantity {
+  display: flex;
+  gap: 2rem;
+  border: 1px solid #c1c1c1;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.quantity span {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.quantity span:not(:nth-child(2)) {
+  cursor: pointer;
+}
+
+.rect button {
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  background-color: #c1c1c1;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.rect button:hover {
+  background-color: #ffffff;
+}
+
+.description p {
+  color: #c1c1c1;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .right-detail h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .right-detail .price span {
+    font-size: 1.2rem;
+  }
+  .right-detail .price {
+    gap: 1.4rem;
+    margin-bottom: 0.4rem;
+  }
+  .brand span {
+    font-size: 1.3rem;
+  }
+  .brand {
+    margin-bottom: 0.5rem;
+  }
+
+  .description p {
+    margin-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .watch-details {
+    flex-direction: column;
+  }
+  .description p {
+    text-align: center;
+  }
+}
+

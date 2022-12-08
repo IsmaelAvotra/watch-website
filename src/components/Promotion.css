@@ -1,0 +1,137 @@
+.promotion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+.promotion div {
+  cursor: pointer;
+}
+
+.top {
+  height: 20rem;
+  width: 100%;
+}
+
+.left-pro .top {
+  background-image: url(../assets/pro1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left-pro .top,
+.right-pro .top {
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+.left-pro .top h1,
+.right-pro .top h1 {
+  font-size: 1.8rem;
+  font-family: 'Kranky', cursive;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.left-pro h2,
+.right-pro h2 {
+  font-size: 1.5rem;
+  font-family: 'Signika Negative', sans-serif;
+  color: #ffffff;
+  line-height: 35px;
+  padding-left: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.left-pro button,
+.right-pro button {
+  padding: 0.4rem 1rem;
+}
+
+.middle-pro .top {
+  background-image: url(../assets/pro2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.middle-pro .top .digital {
+  background: rgba(216, 167, 136, 0.5);
+  padding: 2.5rem;
+  border-radius: 0.2rem;
+}
+
+.digital h2,
+.digital h1 {
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+  color: #ffffff;
+}
+.digital h1 {
+  font-size: 2.8rem;
+}
+
+.right-pro .top {
+  background-image: url(../assets/pro3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timer {
+  background-color: rgb(244, 232, 232);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.timer div {
+  padding: 0.6rem;
+  background-color: #fff6f0;
+  margin: 1.2rem;
+  text-align: center;
+  position: relative;
+  color: #d8a788;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .promotion {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+  .left-pro .top,
+  .right-pro .top {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .promotion {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+  .top {
+    height: 25rem;
+  }
+  .left-pro .top,
+  .right-pro .top {
+    padding-top: 7rem;
+  }
+  .timer div {
+    padding: 0.4rem;
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promotion {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+  .right-pro .top {
+    background-position-x: -100px;
+  }
+  .timer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timer div {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,28 @@
+.brands {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2rem;
+  gap: 1rem;
+}
+.brands div {
+  display: grid;
+  place-items: center;
+  background-color: #2b2b2b;
+  border-radius: 0.2rem;
+}
+
+.brands div:nth-child(2) {
+  background-color: #d8a788;
+}
+
+@media screen and (max-width: 850px) {
+  .brands {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .brands {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.3rem;
+  }
+}

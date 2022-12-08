@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Kranky&family=Signika+Negative:wght@600&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  background-color: #d8a788;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #090909;
+  cursor: pointer;
+}
+
+body {
+  background-color: #17161a;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.heading h1 {
+  color: #d8a688;
+  text-transform: uppercase;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading p {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
